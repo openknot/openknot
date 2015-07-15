@@ -45,7 +45,7 @@ Digital identifiers can have associated with them the following attributes:
 - http://xmlns.com/foaf/spec/#term_Person
 
 ### Email Address
-An email address is an identifier used to allow delivery via the [Internet Message Format](https://tools.ietf.org/html/rfc5322) an electronic mail message.
+An email address is an identifier used to allow delivery via the [Internet Message Format](https://tools.ietf.org/html/rfc5322) -- an electronic mail message.
 
 Email addresses are in the form of ```[ node "@" ] domain``` where ```node``` is a unique identifier within the  SMTP user address space for ```domain```.
 
