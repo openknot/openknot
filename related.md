@@ -66,10 +66,12 @@ Items should be added here to show existing efforts that we are aware of that ar
 ### Software Projects
 
 * [libpurple]
-* https://matrix.org
+* [matrix]
+* [actor-im]
 
 [libpurple]: https://developer.pidgin.im/wiki/WhatIsLibpurple
-
+[matrix]: https://matrix.org
+[actor-im]: https://github.com/actorapp/actor-platform
 ### Service Projects
 
 * Facebook Chat, Hangouts, WhatsApp
