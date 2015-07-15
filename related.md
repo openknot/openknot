@@ -18,8 +18,19 @@ There are some other key ideas, currently in no particular order:
 * Text based, with links to filetypes (clients can choose to auto-render links and/or the results of links)
 * Messages should be threaded into conversations
 * Filtering - positive filtering aids discoverability, negative filtering helps avoid spam. Both Active filtering (human-initiated), such as moderation or per-user/community rulesets and Passive filtering (automated), such as classification, can be either server-side, client-side or both.
-* synchronous & asynchronous messaging
 * what metadata is required?
+
+### Time
+
+One important classification of communication paradigms is in the area of time.
+
+* Realtime/Synchronous/Instant (e.g. IRC/XMPP and most of the protocols supported by [libpurple])
+* Asynchronous (e.g. email, mailing lists, news)
+
+This categorization applies to how messages are *delivered* but also to how people (prefer to) *communicate*.
+
+* just because SMTP often in practice affords almost synchronous communication, that does not mean that people will *respond* instantly, or even that it is expected/necessary that they should. Indeed, messaging based on SMTP transports usually include an expectation of time-shifting.
+* just because instant messages can be ignored until you have a moment does not obviate its synchronous nature and the usual expectation is that messages will either be responded to fairly quickly or become obsolete.
 
 
 ## Functionality
@@ -46,13 +57,19 @@ Gathering a list of openknot-to-X gateways we should consider and/or build, some
 * NNTP
 * RSS/Atom
 * Gopher
-* Slack/HipChat
+* Zephyr
 
 ## Related Projects
 
-Items should be added here to show existing efforts that we are aware of that are related in some way such as protocols/services/paradigms with which we should integrate or otherwise support. If nothing else, this is a good place to ensure we're all aware of "prior art".
+Items should be added here to show existing efforts that we are aware of that are related in some way such as protocols/services/paradigms which we should support or other technologies/procesess whose advantages we should use and disadvantages we should avoid. If nothing else, this is a good place to ensure we're all aware of "prior art".
 
 ### Software Projects
 
+* [libpurple]
+* https://matrix.org
+
+[libpurple]: https://developer.pidgin.im/wiki/WhatIsLibpurple
+
 ### Service Projects
 
+* Facebook Chat, Hangouts, WhatsApp
