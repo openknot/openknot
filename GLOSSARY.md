@@ -2,7 +2,7 @@
 The goal for this document is to identify terms that may have multiple definitions due to how various implementations, silos or other uses "use" the term. Where it can it will identify the term in a concise as possible manner and also provide alternative definitions and see-also's to those uses.
 
 ### Person
-A person is the human side of a [digital identifier](#Identity-(Digital)) and for the sake of Knot is just that - a person.
+A person is the human side of a [digital identifier](#Identity-(Digital)) and for the sake of Knot is just that -- a person.
 
 #### See Also
 - [Identity (Digital)](#Identity-(Digital))
