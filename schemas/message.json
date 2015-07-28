@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "title": "Root schema.",
+  "description": "An explanation about the puropose of this instance described by this schema.",
+  "name": "/",
+  "properties": {
+    "message": {
+      "id": "http://jsonschema.net/message",
+      "type": "object",
+      "title": "Message schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "message",
+      "properties": {
+        "id": {
+          "id": "http://jsonschema.net/message/id",
+          "type": "integer",
+          "title": "Id schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "id",
+          "default": 1234
+        },
+        "timestamp": {
+          "id": "http://jsonschema.net/message/timestamp",
+          "type": "string",
+          "title": "Timestamp schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "timestamp",
+          "default": "2015-08-01 00:00:00 +1000"
+        },
+        "protocol": {
+          "id": "http://jsonschema.net/message/protocol",
+          "type": "string",
+          "title": "Protocol schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "protocol",
+          "default": "IRC"
+        },
+        "source": {
+          "id": "http://jsonschema.net/message/source",
+          "type": "string",
+          "title": "Source schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "source",
+          "default": "prologic"
+        },
+        "targets": {
+          "id": "http://jsonschema.net/message/targets",
+          "type": "array",
+          "title": "Targets schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "targets",
+          "items": {
+            "id": "http://jsonschema.net/message/targets/0",
+            "type": "string",
+            "title": "0 schema.",
+            "description": "An explanation about the puropose of this instance described by this schema.",
+            "name": "0",
+            "default": "#openknot"
+          }
+        },
+        "content": {
+          "id": "http://jsonschema.net/message/content",
+          "type": "string",
+          "title": "Content schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "content",
+          "default": "Test!"
+        }
+      },
+      "required": [
+        "id",
+        "timestamp",
+        "protocol",
+        "source",
+        "targets",
+        "content"
+      ]
+    }
+  },
+  "required": [
+    "message"
+  ]
+}

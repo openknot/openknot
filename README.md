@@ -10,3 +10,6 @@ The fundamental idea is that:
 
 _*Decoupling the messages/threads/channels from the transport/storage mechanisms allows the user agent software maximum flexibility to present information and functionality in a manner that is delightful to the human.*_
 
+## Resources
+
+- [Message Schema](https://github.com/openknot/openknot/blob/master/schemas/message.json)
