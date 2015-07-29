@@ -1,0 +1,19 @@
+# Editors
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+*.bak
+.idea
+
+# dev/build products...
+dist
+build
+.env
+*.py[co]
+*.egg-info
+
+# Mac OS X stuff...
+.DS_Store
