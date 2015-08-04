@@ -3,37 +3,37 @@
   "id": "http://jsonschema.net",
   "type": "object",
   "title": "Root schema.",
-  "description": "An explanation about the puropose of this instance described by this schema.",
+  "description": "OpenKnot Communications Platform Schema: https://github.com/openknot/openknot/blob/master/schemas/message.json",
   "name": "/",
   "properties": {
     "message": {
       "id": "http://jsonschema.net/message",
       "type": "object",
       "title": "Message schema.",
-      "description": "An explanation about the puropose of this instance described by this schema.",
+      "description": "All messages sent/received by OpenKnot should be serializable to this schema",
       "name": "message",
       "properties": {
         "id": {
           "id": "http://jsonschema.net/message/id",
-          "type": "integer",
+          "type": "string",
           "title": "Id schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
+          "description": "A UUID for this message: 32 lowercase hexadecimal digits, displayed in five groups separated by hyphens, in the form 8-4-4-4-12",
           "name": "id",
-          "default": 1234
+          "default": "00000000-0000-0000-0000-000000000000"
         },
         "timestamp": {
           "id": "http://jsonschema.net/message/timestamp",
           "type": "string",
           "title": "Timestamp schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
+          "description": "ISO8601 formatted datetime with millisecond precision ALWAYS expressed as UTC",
           "name": "timestamp",
-          "default": "2015-08-01 00:00:00 +1000"
+          "default": "2015-08-04T14:23:19.234Z"
         },
         "protocol": {
           "id": "http://jsonschema.net/message/protocol",
           "type": "string",
-          "title": "Protocol schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
+          "title": "Initial Protocol Schema.",
+          "description": "The protocol that was originally used to create the message: IRC/NNTP/XMPP/SMTP/etc.",
           "name": "protocol",
           "default": "IRC"
         },
@@ -41,21 +41,21 @@
           "id": "http://jsonschema.net/message/source",
           "type": "string",
           "title": "Source schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
+          "description": "The identifier for the Agent that created the message",
           "name": "source",
           "default": "prologic"
         },
-        "targets": {
-          "id": "http://jsonschema.net/message/targets",
+        "destinations": {
+          "id": "http://jsonschema.net/message/destinations",
           "type": "array",
-          "title": "Targets schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
-          "name": "targets",
+          "title": "Destinations schema.",
+          "description": "A list of destination Agents to which the message should be delivered",
+          "name": "destinations",
           "items": {
-            "id": "http://jsonschema.net/message/targets/0",
+            "id": "http://jsonschema.net/message/destinations/0",
             "type": "string",
             "title": "0 schema.",
-            "description": "An explanation about the puropose of this instance described by this schema.",
+            "description": "The Agent identifier for this destination for this message",
             "name": "0",
             "default": "#openknot"
           }
@@ -64,7 +64,7 @@
           "id": "http://jsonschema.net/message/content",
           "type": "string",
           "title": "Content schema.",
-          "description": "An explanation about the puropose of this instance described by this schema.",
+          "description": "The content of the message, including any headers by extension",
           "name": "content",
           "default": "Test!"
         }
@@ -74,7 +74,7 @@
         "timestamp",
         "protocol",
         "source",
-        "targets",
+        "destinations",
         "content"
       ]
     }
